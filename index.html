@@ -15,14 +15,14 @@
                 Presupuesto Disponible
             </div>
             <div class="presupuesto_valor" id='presupuesto'>+2,000.00</div>
-            <div class="presupuesto_ingreso limpiarEstilos">
+            <div class="limpiarEstilos presupuesto_ingreso">
                 <div class="presupuesto_ingreso--texto">Ingresos</div>
                 <div class="derecha">
                     <div class="presupuesto_ingreso--valor" id='ingresos'>+4,000.00</div>
                     <div class="presupuesto_ingreso--porcentaje">&nbsp;</div>
                 </div>
             </div>
-            <div class="presupuesto_egreso limpiarEstilos">
+            <div class="limpiarEstilos presupuesto_egreso">
                 <div class="presupuesto_egreso--texto">Egresos</div>
                 <div class="derecha limpiarEstilos">
                     <div class="presupuesto_egreso--valor" id='egresos'>-1,900.00</div>
@@ -36,8 +36,8 @@
         <div class="agregar">
             <div class="agregar_contenedor">
                 <select class="agregar_tipo" id="tipo">
-                    <option value="ingreso" selected> +</option>
-                    <option value="egreso" selected>-</option>
+                    <option value="ingreso"> +</option>
+                    <option value="egreso">-</option>
                 </select>
                 <input type="text" class="agregar_descripcion" placeholder="Agregar Descripcion" id="descripcion" />
                 <input type="number" class="agregar_valor" placeholder="Valor" id="valor" step="any" />
@@ -52,17 +52,14 @@
         <div class="ingreso">
             <h2 class="ingreso_titulo">Ingresos</h2>
             <div id="lista-ingresos">
-
+                <!-- Aquí se agregarán los ingresos dinámicamente -->
             </div>
         </div>
 
         <div class="egreso">
             <h2 class="egreso_titulo">Egresos</h2>
             <div id="lista-egresos">
-
-            </div>
-            <div id="lista-egresos">
-
+                <!-- Aquí se agregarán los egresos dinámicamente -->
             </div>
         </div>
     </div>

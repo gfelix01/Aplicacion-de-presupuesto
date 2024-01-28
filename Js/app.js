@@ -38,12 +38,13 @@ const cargarCabecero = () => {
   document.getElementById('egresos').innerHTML = formatoMoneda(totalEgresos())
 }
 const formatoMoneda = (valor) => {
-  return valor.toLocaleString('es-ES', { style: 'currency', currency: 'DOP', minimumFractionDigits: 2 });
+  return valor.toLocaleString('es-DO', { style: 'currency', currency: 'DOP', minimumFractionDigits: 2 });
 }
 
-const formatoPorcentaje = (valor)=> {
-  return valor.toLocaleString('es-ES', {style: 'percent', minimumFractionDigits:2});
+const formatoPorcentaje = (valor) => {
+  return valor.toLocaleString('es-DO', { style: 'percent', minimumFractionDigits: 2 });
 }
+
 const cargaIngresos =() =>{
   let ingresosHTML =''
   for(let ingreso of ingresos){

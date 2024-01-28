@@ -11,12 +11,10 @@
 }
 
 body {
-    color: #555;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    position: relative;
-    height: 100vh;
-    font-weight: 400;
+    color: #555;
+    background-color: #f7f7f7;
 }
 
 .derecha {
@@ -112,7 +110,6 @@ body {
     text-align: center;
     border-radius: 3px;
 }
-
 
 .agregar {
     padding: 14px;
@@ -260,7 +257,6 @@ h2 {
 .egreso .elemento_eliminar--btn {
     color: #FF5049;
 }
-
 
 .elemento_eliminar {
     float: left;
